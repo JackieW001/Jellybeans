@@ -19,10 +19,10 @@
 ###How We Tested Run Time:
 #####We tested the runtimes by running our algorithm and checking for time within the terminal using time or Measure-Command{....} in the case of Windows Powershell. When checking for the best and average case we presumed that the runtime would be the same. This is because the average case was an array of random integers and our algo used pivot point as the middle and in the best case the pivot point would always be the middle index. For this reason we said that the run time of the average and best case should be the same. We tested the run time on arrays of size 1, 10, 100, 1000, and 10000.
 
-In the case of the worst case, in our algo we accounted for picking the first index always as pivot point in a reverse sorted array. We also tested this in the terminal. In order to test for the worst case, we had to modify our algo so that the pivot point would always be the first index. 
+#####In the case of the worst case, in our algo we accounted for picking the first index always as pivot point in a reverse sorted array. We also tested this in the terminal. In order to test for the worst case, we had to modify our algo so that the pivot point would always be the first index. 
 
 ###Our Data:
-#####Our data can be found here along with graphs which help to classify runtime: 
+#####Our data can be found here along with graphs which help to classify runtime: https://docs.google.com/document/d/1VZsGI31gtV_SJPDS0OqiYE3mCv-xSxtQCw8hGMxV-nk/pub
 
 ###How Pivot Selection and Data Arrangement Affect Execution Time:
 #####Both the best case and worst case senarios demonstarte how pivot selection and data arrangement affect execution time. In the worst case senario, the most swaps and comparisions are being made if the array is in reverse order and we choose the last index of the array as our pivot point. However, in the best case, and even the average case, the data is being divided roughly in half, allowing us to cut our time from O(n^2) to at least O(logn) since we can go through the two subarrays at the sime time.
