@@ -1,4 +1,4 @@
-public static QuickSortTester{
+public class QuickSortTester{
 
     public static void main (String[] args){
 	QuickSort qs = new QuickSort();
@@ -11,15 +11,26 @@ public static QuickSortTester{
 	for (int i = 0; i < arr10.length; i++){
 	    arr10[i] = (int)(Math.random()*100);
 	}
+	qs.qsort(arr10);
+
 	int[] arr100 = new int[100];
 	for (int i = 0; i < arr100.length; i++){
 	    arr100[i] = (int)(Math.random()*100);
 	}
-	
+	qs.qsort(arr100);
+
 	int[] arr1000 = new int[1000];
 	for (int i = 0; i < arr1000.length; i++){
 	    arr1000[i] = (int)(Math.random()*100);
 	}
+	qs.qsort(arr1000);
+
+	int[] arr10000 = new int[10000];
+	for (int i = 0; i < arr1000.length; i++){
+	    arr10000[i] = (int)(Math.random()*100);
+	}
+	qs.qsort(arr10000);
+	
 	*/
 	
     }
